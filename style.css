@@ -1,0 +1,27 @@
+.field-1 {
+    background-color: #2574a9;
+}
+.field-1-legend {
+    background-color: #2574a9;
+}
+.field-2 {
+    background-color: #9a12b3;
+}
+.field-2-legend {
+    background-color: #9a12b3;
+}
+.field-3 {
+    background-color: #db0a5b;
+}
+.field-3-legend {
+    background-color: #db0a5b;
+}
+li {
+    margin-bottom: 2px;
+}
+.carte {
+    list-style-type: none;
+}
+.endButton {
+    margin-top: 2px;
+}

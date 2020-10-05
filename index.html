@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- https://www.w3schools.com/css/css_howto.asp -->
+        <link rel="stylesheet" href="style.css">
+        
+        <title>MyTitle</title>
+    </head>
+
+    <!-- you can indent a whole section by using TAB -->
+    <!-- and also indent backward using Shift + TAB -->
+
+    <body>
+        <div class="container">
+            <form>
+                <fieldset class="field-1">
+                    <legend class="field-1-legend">Votre identité</legend>
+                    <ol>
+                        <li>
+                            <label for="nom">Nom :</label>
+                            <input type="text" placeholder="Nom">
+                        </li>
+                        <li>
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" placeholder="Prénom">
+                        </li>
+                        <li>
+                            <label for="mail">Adresse mail :</label>
+                            <input type="text" placeholder="Adresse mail">
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset class="field-2">
+                    <legend class="field-2-legend">Adresse de livraison</legend>
+                    <ol>
+                        <li>
+                            <label for="adresse">Adresse :</label>
+                            <textarea type="text" rows="5"></textarea>
+                        </li>
+                        <li>
+                            <label for="codepostal">Code postal :</label>
+                            <input type="text" placeholder="Code postal">
+                        </li>
+                        <li>
+                            <label for="ville">Ville :</label>
+                            <input type="text" placeholder="Ville">
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset class="field-3">
+                    <legend class="field-3-legend">Informations de réglement</legend>
+                    <ol>
+                        <li>
+                            <label for="typedecarte">Type de carte bancaire :</label>
+                            <ul>
+                                <li class="carte">
+                                    <input type="radio">
+                                    <label for="visa">VISA</label>
+                                </li>
+                                <li class="carte">
+                                    <input type="radio">
+                                    <label for="mastercard">Mastercard</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="numerodecarte">Numéro de carte :</label>
+                            <input type="text" placeholder="Numéro de carte">
+                        </li>
+                        <li>
+                            <label for="codedesecu">Code de sécurité :</label>
+                            <input type="text" placeholder="Code de sécurité">
+                        </li>
+                        <li>
+                            <label for="nomdutitulaire">Nom du titulaire :</label>
+                            <input type="text" placeholder="Nom du titulaire">
+                        </li>
+                    </ol>
+                </fieldset>
+                <button class="endButton" type="submit">J'achète !</button>
+            </form>
+        </div>
+    </body>
+</html>
