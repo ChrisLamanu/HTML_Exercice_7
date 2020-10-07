@@ -11,16 +11,17 @@
 
     <!-- you can indent a whole section by using TAB -->
     <!-- and also indent backward using Shift + TAB -->
+    <!-- use CTRL + : to comment -->
 
     <body>
         <div class="container">
-            <form>
+            <form method="POST">
                 <fieldset class="field-1">
                     <legend class="field-1-legend">Votre identité</legend>
                     <ol>
                         <li>
                             <label for="nom">Nom :</label>
-                            <input id="nom" type="text" placeholder="Nom">
+                            <input id="nom" type="text" placeholder="Nom" name="postName">
                         </li>
                         <li>
                             <label for="prenom">Prénom :</label>
@@ -28,7 +29,7 @@
                         </li>
                         <li>
                             <label for="mail">Adresse mail :</label>
-                            <input id="mail" type="text" placeholder="Adresse mail">
+                            <input id="mail" type="email" placeholder="Adresse mail">
                         </li>
                     </ol>
                 </fieldset>
@@ -56,22 +57,22 @@
                             <label id="typedecarte">Type de carte bancaire :</label>
                             <ul>
                                 <li class="carte">
-                                    <input id="visa" type="radio">
+                                    <input id="visa" type="radio" value="visa" checked name="cardName">
                                     <label for="visa">VISA</label>
                                 </li>
                                 <li class="carte">
-                                    <input id="mastercard" type="radio">
+                                    <input id="mastercard" type="radio" value="mastercard" name="cardName">
                                     <label for="mastercard">Mastercard</label>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <label for="numerodecarte">Numéro de carte :</label>
-                            <input id="numerodecarte" type="text" placeholder="Numéro de carte">
+                            <input id="numerodecarte" type="password" placeholder="Numéro de carte">
                         </li>
                         <li>
                             <label for="codedesecu">Code de sécurité :</label>
-                            <input id="codedesecu" type="text" placeholder="Code de sécurité">
+                            <input id="codedesecu" type="password" placeholder="Code de sécurité">
                         </li>
                         <li>
                             <label for="nomdutitulaire">Nom du titulaire :</label>
